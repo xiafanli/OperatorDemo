@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: operatordemo
 repo: github.com/xiafanli/OperatorDemo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: demo.pab.com.cn
+  group: apps
+  kind: Application
+  path: github.com/xiafanli/OperatorDemo/api/v1
+  version: v1
 version: "3"
